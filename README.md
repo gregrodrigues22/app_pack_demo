@@ -26,4 +26,6 @@ cd app_pack_demo
 
 ## 👨‍⚕️ Autor
 Desenvolvido por Gregório Rodrigues
-Especialista em Dados em Saúde
+Médico de Família e Comunidade
+Mestre em Saúde Pública - Epidemiologia
+
