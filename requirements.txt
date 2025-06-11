@@ -9,3 +9,4 @@ protobuf
 pyarrow
 scipy
 streamlit
+db-dtypes
