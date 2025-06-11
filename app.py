@@ -8,6 +8,7 @@ import json
 from scipy.stats import linregress
 from plotly.subplots import make_subplots
 from plotly.colors import sequential
+import os
 
 #gcloud auth application-default login
 #~/.local/bin/streamlit run app.py --server.port=8080 --server.enableCORS=false --server.enableXsrfProtection=false --server.address=0.0.0.0
