@@ -133,7 +133,6 @@ pydeck==0.9.1
 pydocstyle==6.3.0
 pyflakes==2.2.0
 Pygments==2.19.1
-PyGObject==3.48.2
 PyJWT==2.7.0
 pylint==3.3.7
 pymongo==4.12.1
