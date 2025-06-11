@@ -20,7 +20,7 @@ PROJECT_ID = "escolap2p"
 TABLE_ID = "cliente_packbrasil.sih_aplications" 
 
 with open("/tmp/keyfile.json", "w") as f:
-    json.dump(st.secrets["bigquery"], f)
+    json.dump(st.secrets["bigquery"].to_dict(), f)
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/tmp/keyfile.json"
 
 client = bigquery.Client()
