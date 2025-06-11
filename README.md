@@ -22,6 +22,6 @@ Aplicativo interativo para análise de **Internações por Condições Sensívei
 git clone https://github.com/gregorodrigues22/app_pack_demo.git
 cd app_pack_demo
 
-👨‍⚕️ Autor
+## 👨‍⚕️ Autor
 Desenvolvido por Gregório Rodrigues
 Especialista em Dados em Saúde
