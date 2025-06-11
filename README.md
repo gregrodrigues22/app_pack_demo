@@ -6,26 +6,14 @@ Aplicativo interativo para análise de **Internações por Condições Sensívei
 
 ## 🚀 Funcionalidades principais
 
-- ✅ Filtros interativos por ano, mês, sexo, faixa etária, tipo de internação, CNES, e mais
-- 📈 Gráficos comparativos entre ICSAP e Não-ICSAP
-- 🔥 Heatmap de internações ao longo do tempo com totais marginais
-- 📊 Gráfico de Pareto para identificar os principais motivos de internação
-- 🧠 Interface leve, responsiva e 100% em Python com Streamlit
-
----
-
-## 🖥️ Como rodar o app localmente
-
-1. **Clone o repositório:**
-
-```bash
-git clone https://github.com/gregorodrigues22/app_pack_demo.git
-cd app_pack_demo
+- ✅ Filtros interativos por ano, mês, sexo, faixa etária, tipo de internação, CNES, e mais  
+- 📈 Gráficos comparativos entre ICSAP e Não-ICSAP  
+- 🔥 Heatmap de internações ao longo do tempo com totais marginais  
+- 📊 Gráfico de Pareto para identificar os principais motivos de internação  
+- 🧠 Interface leve, responsiva e 100% em Python com Streamlit  
 
 ---
 
 ## 👨‍⚕️ Autor
-Desenvolvido por Gregório Rodrigues
-Médico de Família e Comunidade
-Mestre em Saúde Pública - Epidemiologia
+Desenvolvido por Gregório Rodrigues, Médico de Família e Comunidade, Mestre em Saúde Pública - Epidemiologia
 
