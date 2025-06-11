@@ -19,6 +19,12 @@ st.set_page_config(layout="wide", page_title="Análise de AIHs por Grão")
 PROJECT_ID = "escolap2p" 
 TABLE_ID = "cliente_packbrasil.sih_aplications" 
 
+with open("/tmp/keyfile.json", "w") as f:
+    json.dump(st.secrets["bigquery"], f)
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/tmp/keyfile.json"
+
+client = bigquery.Client()
+
 # --- Aquisição de dados do BigQuery
 @st.cache_data
 def consultar_dados():
@@ -28,7 +34,6 @@ def consultar_dados():
             *
         FROM
             `escolap2p.cliente_packbrasil.sih_icsap_pack_demo`
-        #LIMIT 10000
     """
     return client.query(query).to_dataframe()
 
