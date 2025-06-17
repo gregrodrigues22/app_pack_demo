@@ -8,6 +8,7 @@ import json
 from scipy.stats import linregress
 from plotly.subplots import make_subplots
 from plotly.colors import sequential
+import os
 
 #gcloud auth application-default login
 #~/.local/bin/streamlit run app.py --server.port=8080 --server.enableCORS=false --server.enableXsrfProtection=false --server.address=0.0.0.0
@@ -20,7 +21,7 @@ PROJECT_ID = "escolap2p"
 TABLE_ID = "cliente_packbrasil.sih_aplications" 
 
 with open("/tmp/keyfile.json", "w") as f:
-    json.dump(st.secrets["bigquery"], f)
+    json.dump(st.secrets["bigquery"].to_dict(), f)
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/tmp/keyfile.json"
 
 client = bigquery.Client()
