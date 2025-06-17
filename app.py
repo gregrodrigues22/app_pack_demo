@@ -129,6 +129,21 @@ with st.sidebar.expander("Fatores do Hospital", expanded=False):
         default=tipo_vinculo_options
     )
 
+df = df[
+    (df['FAIXA_ETARIA'].isin(selected_faixa_etaria)) &
+    (df['SEXO_DESC'].isin(selected_sexo)) &
+    (df['TIPO_INTERNAMENTO'].isin(selected_tipo_internamento)) &
+    (df['LOCAL_ATENDIMENTO'].isin(selected_local_atendimento)) &
+    (df['ANO_INT'].isin(selected_ano_int)) &
+    (df['MES_INT'].isin(selected_mes_int)) &
+    (df['QUINTIL_CUSTO'].isin(selected_quintil_custo)) &
+    (df['capitulo'].isin(selected_capitulo_cid)) &
+    (df['icsap'].isin(selected_tipo_icsap)) &
+    (df['CNES'].isin(selected_cnes)) &
+    (df['TIPO_GESTAO'].isin(selected_tipo_gestao)) &
+    (df['TIPO_VINC_SUS'].isin(selected_tipo_vinculo))
+]
+
 # CSS personalizado com degradê
 st.markdown("""
 <style>
