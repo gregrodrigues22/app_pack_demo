@@ -130,6 +130,26 @@ with st.sidebar.expander("Fatores do Hospital", expanded=False):
         default=tipo_vinculo_options
     )
 
+filtros_obrigatorios = {
+    "Faixa Etária": selected_faixa_etaria,
+    "Sexo": selected_sexo,
+    "Tipo de Internamento": selected_tipo_internamento,
+    "Local de Atendimento": selected_local_atendimento,
+    "Ano da Internação": selected_ano_int,
+    "Mês da Internação": selected_mes_int,
+    "Quintil de Custo": selected_quintil_custo,
+    "Capítulo CID": selected_capitulo_cid,
+    "Tipo ICSAP": selected_tipo_icsap,
+    "Estabelecimento (CNES)": selected_cnes,
+    "Tipo de Gestão": selected_tipo_gestao,
+    "Tipo de Vínculo SUS": selected_tipo_vinculo
+}
+
+for nome, valor in filtros_obrigatorios.items():
+    if not valor:
+        st.warning(f"⚠️ Por favor, selecione pelo menos uma opção para **{nome}**.")
+        st.stop()
+        
 df = df[
     (df['FAIXA_ETARIA'].isin(selected_faixa_etaria)) &
     (df['SEXO_DESC'].isin(selected_sexo)) &
